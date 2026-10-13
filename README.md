@@ -72,7 +72,7 @@ Se prestó atención a no exponer datos y a reducir la superficie de ataque:
 
 ```bash
 git clone https://github.com/RamalloDanilo1913/viajes-demo.git
-cd viajes-filial-demo
+cd viajes-demo
 npm install
 cp .env.example .env.local   # completá con tus propias credenciales
 npm run dev
