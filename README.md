@@ -112,6 +112,6 @@ sql/              Esquema de base de datos
 
 ## Autor
 
-**Danilo Ramallo** — Estudiante de Ingeniería Electrónica (UBA) · Desarrollo web y ciberseguridad
+**Danilo Ramallo** — Estudiante de Ingeniería Electrónica · Desarrollo web y ciberseguridad
 
 [LinkedIn](https://www.linkedin.com/in/danilo-ramallo-9877a6289)
