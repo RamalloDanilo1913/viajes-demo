@@ -1,0 +1,32 @@
+alter table public.admin_sesiones enable row level security;
+alter table public.admins enable row level security;
+alter table public.bajas_bondi enable row level security;
+alter table public.bondi_config enable row level security;
+alter table public.bondi_extras enable row level security;
+alter table public.bondi_meta enable row level security;
+alter table public.bondi_pasajeros enable row level security;
+alter table public.campanias_bondi enable row level security;
+alter table public.configuracion enable row level security;
+alter table public.contactos_bondi enable row level security;
+alter table public.encuestas_bondi enable row level security;
+alter table public.errores enable row level security;
+alter table public.historial_viajes enable row level security;
+alter table public.info_bondi enable row level security;
+alter table public.partidos enable row level security;
+alter table public.perfiles enable row level security;
+alter table public.reservas_autos enable row level security;
+alter table public.reservas_bondi enable row level security;
+alter table public.reservas_bondi_pasajeros enable row level security;
+alter table public.viajes_autos enable row level security;
+
+revoke execute on function public.bondi_check(text) from public, anon, authenticated;
+
+revoke execute on function public.bondi_add_extra(text, text) from public;
+revoke execute on function public.bondi_add_pasajero(text, jsonb) from public;
+revoke execute on function public.bondi_append(text, jsonb) from public;
+revoke execute on function public.bondi_clear(text) from public;
+revoke execute on function public.bondi_del_extra(text, bigint) from public;
+revoke execute on function public.bondi_del_pasajero(text, bigint) from public;
+revoke execute on function public.bondi_get(text) from public;
+revoke execute on function public.bondi_load(text, jsonb, jsonb) from public;
+revoke execute on function public.bondi_update(text, bigint, jsonb) from public;
