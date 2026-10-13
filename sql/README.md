@@ -1,6 +1,6 @@
 # Base de datos
 
-Esquema de Supabase (PostgreSQL) del proyecto, sin datos reales.
+Esquema de Supabase (PostgreSQL) del proyecto.
 
 | Archivo | Contenido |
 |---|---|
